@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorSexyBlue">#2193B0</color>
+    <color name="colorMiddleBlueGreen">#91d0d7</color>
+    <color name="colorSexyLightBlue">#6DD5ED</color>
+
+    <color name="colorMaroon">#C06C84</color>
+
+    <color name="colorSunshine">#FFC3A0</color>
+
+    <color name="colorGradient">#FfAFBD</color>
+
+
+    <color name="colorPurpleLove">#CC2B5E</color>
+
+    <color name="colorDarkPurpleLove">#753A88</color>
+
+    <color name="colorPink">#F88379</color>
+
+    <color name="colorRedPink">#FF6163</color>
+
+    <color name="colorMagenta">#FF0090</color>
+
+    <color name="colorCreamy">#FF69B4</color>
+
+    <color name="colorPiglet">#EE9CA7</color>
+
+    <color name="colorDarkPiglet">#FFDDE1</color>
+
+    <color name="colorMauve">#42275A</color>
+
+    <color name="colorLightMauve">#734B6D</color>
+
+    <color name="color50Shades">#BDC3C7</color>
+
+    <color name="colorGray">#2C3E50</color>
+
+    <color name="colorALostMemory">#DE6262</color>
+
+    <color name="colorLightALostMemory">#FFB88C</color>
+
+    <color name="colorSocialive">#06BEB5</color>
+
+    <color name="colorBabyBlue">#48B1BF</color>
+
+    <color name="colorTranquil">#EECDA2</color>
+
+    <color name="colorDarkTranquil">#EF629F</color>
+
+    <color name="colorPurple">#6C5B78</color>
+
+    <color name="colorDeepPurple">#7C4DFF</color>
+
+    <color name="colorMaterialYellow">#FFB300</color>
+
+    <color name="colorMaterialGreen">#00BFA5</color>
+
+    <color name="colorPinkAccent">#FF4081</color>
+
+    <!--Almost-->
+
+
+    <!--Cool Greens-->
+    <color name="colorPastelGreen">#B0E0E6</color>
+
+
+    <color name="colorAlmostFirst">#DDD6F3</color>
+
+    <color name="colorAlmostSecond">#FAACA8</color>
+</resources>

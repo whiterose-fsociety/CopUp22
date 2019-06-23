@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="?actionBarSize"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#fff">
+
+                <ImageView
+                    android:id="@+id/options"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/right_margin"
+                    android:layout_marginRight="@dimen/right_margin"
+                    android:src="@drawable/ic_menu" />
+            </RelativeLayout>
+
+            <include layout="@layout/profile_top_header" />
+
+            <include layout="@layout/profile_interests" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentBottom="true">
+
+
+            <include layout="@layout/layout_bottom_navigation" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_sheet" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

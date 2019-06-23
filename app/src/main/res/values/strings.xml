@@ -1,0 +1,196 @@
+<resources>
+    <string name="app_name">Cop Up</string>
+    <string name="hello_world">Hello World</string>
+    <string name="welcome_message">Welcome to Cop Up</string>
+
+    <string-array name="gender_entries">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Neutral</item>
+    </string-array>
+
+    <string-array name="product_type">
+        <item>Torso</item>
+        <item>Head</item>
+        <item>Outfit</item>
+        <item>Lower Body</item>
+        <item>Shoes</item>
+    </string-array>
+
+    <string-array name="condition_entries">
+        <item>Brand New</item>
+        <item>Used</item>
+        <item>Not Used</item>
+    </string-array>
+
+    <string-array name="transaction_type">
+        <item>Sell</item>
+        <item>Trade</item>
+    </string-array>
+    <!--Networking-->
+    <!--Firebase Collections-->
+    <!--Firebase Collections-->
+    <!--Networking-->
+    <!--HINTS-->
+    <string name="hint_size">XXL</string>
+    <string name="hint_size_shoes">10</string>
+    <string name="hint_size_lower_body">24</string>
+
+    <string name="size_small">S</string>
+    <string name="size_medium">M</string>
+    <string name="size_large">L</string>
+    <string name="size_xlarge">XL</string>
+    <string name="size_xxlarge">XXL</string>
+
+    <string name="product_parcelable">product</string>
+
+
+    <!--HINTS-->
+    <!--Layouts and Styling-->
+    <!--Activities-->
+    <!--POST ACTIVITY-->
+    <string name="intent_get_image_from_gallery">Image</string>
+    <string name="description">Description</string>
+    <string name="brand">Product Title</string>
+    <string name="location">Location</string>
+    <string name="gender">Gender</string>
+    <string name="type">Type</string>
+    <string name="condition">Condition</string>
+    <string name="price">800</string>
+    <string name="post">Post</string>
+
+    <string name="select_size">Select Size</string>
+    <string name="select_type">Select Type</string>
+    <string name="select_price">Select Price</string>
+    <string name="select_condition">Select Condition</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="select_transaction">Select Transaction</string>
+
+
+    <!--INPUT & OUTPUT-->
+    <string name="choose_image">Please Choose Image From Gallery</string>
+    <!--INPUT & OUTPUT-->
+
+    <!--POST ACTIVITY-->
+    <!--Fragment Strings-->
+
+    <!--Registry Fragment Strings-->
+
+    <!--Input & Output Strings-->
+    <string name="username">Username</string>
+    <string name="login_input">Phone Number, Email, Username</string>
+    <string name="email">Email</string>
+    <string name="number">Phone Number</string>
+    <string name="number_object">number_object</string>
+    <string name="password">Password</string>
+    <string name="otp">One Time Pin</string>
+    <!--Input & Output Strings-->
+
+    <!--Fragment Strings-->
+    <string name="login_fragment">login_fragment</string>
+    <string name="forgot_password_fragment">forgot_password</string>
+    <string name="email_fragment">email_fragment</string>
+    <string name="phone_number_fragment">phone_number_fragment</string>
+    <string name="register_user_fragment">register_user_fragment</string>
+    <string name="select_image_fragment">select_image_fragment</string>
+    <string name="select_details_fragment">select_details_fragment</string>
+    <string name="profile_fragment">profile_fragment</string>
+    <!--Fragment Strings-->
+
+    <string name="register_sign_up">Sign Up</string>
+    <string name="register_btn">Register</string>
+    <string name="next_btn">Next</string>
+    <string name="register_link">Already have an account ? Login here</string>
+    <string name="phone_hint_example">012345678</string>
+    <string name="login_introduction">Hello</string>
+    <string name="login_sign_in">Sign in to your account</string>
+    <string name="login_btn">Login</string>
+    <string name="login_link">Don\'t have an account ? Register here</string>
+    <string name="forgot_password">Forgot your password ?</string>
+    <string name="register_error_message">Please Try Again</string>
+
+    <!--Registry Fragment Strings-->
+
+    <!--Network Registry Strings-->
+
+    <!--NETWORK POSTING STRINGS-->
+    <!--POST STRINGS-->
+    <string name="post_error">Could Not Post Product</string>
+    <string name="upload_error">Could Not Upload Product</string>
+    <string name="post_empty_uri">Image Error</string>
+    <string name="post_gallery">Gallery</string>
+    <string name="post_choose_image">Take Photo</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="products">Products</string>
+    <string name="interests">Interests</string>
+    <string name="view_all">View All</string>
+    <string name="trending">Trending</string>
+    <string name="available">Available</string>
+    <!--POST STRINGS-->
+    <!--NETWORK POSTING STRINGS-->
+
+
+    <!--Firestore Strings-->
+
+    <string name="users_collection">users</string>
+    <string name="posts_collection">posts</string>
+
+    <!--USER FIELD STRINGS-->
+    <string name="user_username">username</string>
+    <string name="user_id">userID</string>
+    <string name="user_phone_number">phone.number</string>
+    <!--USER FIELD STRINGS-->
+
+    <!--Firestore Strings-->
+
+
+    <!--Error Strings-->
+    <string name="phone_input_error">Invalid Number Entered</string>
+    <string name="phone_input_empty">Please Enter Phone Number</string>
+    <string name="phone_success">SMS Sent To Your Mobile Device</string>
+    <string name="phone_invalid_request">Invalid Request</string>
+    <string name="phone_too_many_requests">OTP Expired</string>
+    <string name="phone_error">Could Not Send SMS</string>
+    <string name="otp_input_error">Please Fill In OTP</string>
+    <string name="otp_error">The OTP Is Incorrect</string>
+    <string name="email_input_empty">Please Enter Email</string>
+    <string name="input_empty">Please Fill In All Fields</string>
+    <string name="user_added_success">Successfully Registered</string>
+    <string name="user_added_error">Something Went Wrong</string>
+    <string name="input_error">Please Enter Valid Details</string>
+    <string name="email_input_error">Invalid Email Entered</string>
+    <string name="short_password">Password is too short</string>
+    <string name="link_message">A link will be sent to your email</string>
+    <string name="oassord_link">Password Recovery In Email</string>
+    <string name="send_link">Send Link</string>
+    <string name="error">Something went wrong</string>
+    <string name="email_exists">Email Is Already Registered</string>
+    <string name="number_exists">Phone Number Is Already Registered</string>
+    <string name="username_exists">Username Is Taken</string>
+    <string name="username_not_exists">User Does Not Exist</string>
+    <string name="wrong_email">Email Is Not Valid</string>
+    <string name="user_error">Sorry, Could Not Add User</string>
+    <string name="email_verification_error">Could Not Send Verification Email</string>
+    <string name="email_not_verified">Email Is Not Verified</string>
+    <!--Error Strings-->
+
+    <!--SUCCESS Strings-->
+    <string name="phone_input_success">Code Sent To Mobile Phone</string>
+    <string name="email_input_success">Link Sent To Email</string>
+    <string name="user_success">User Added</string>
+    <string name="email_verification_success">Verification Email Sent</string>
+    <!--SUCCESS Strings-->
+    <!--Network Registry Strings-->
+
+
+    <!--Activities-->
+
+    <!--Extra Styles-->
+    <string name="menu_home">Home</string>
+    <string name="menu_post">Post</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="menu_profile">Profile</string>
+    <!--Extra Styles-->
+
+</resources>

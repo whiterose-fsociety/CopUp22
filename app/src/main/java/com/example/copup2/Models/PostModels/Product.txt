@@ -1,0 +1,61 @@
+
+    public Product(String image, String description, String title, String location) {
+        this.image = image;
+        this.description = description;
+        this.title = title;
+        this.location = location;
+    }
+
+    protected Product(Parcel parcel) {
+        image = parcel.readString();
+        description = parcel.readString();
+        title = parcel.readString();
+        location = parcel.readString();
+        gender = parcel.readString();
+        productType = parcel.readParcelable(ProductType.class.getClassLoader());
+        condition = parcel.readString();
+        price = parcel.readDouble();
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setProductType(ProductType productType) {
+        this.productType = productType;
+    }
+
+    public void setCondition(String condition) {
+        this.condition = condition;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public Product(String image, String description, String title, String location, String gender, ProductType productType, String condition, double price) {
+        this.image = image;
+        this.description = description;
+        this.title = title;
+        this.location = location;
+        this.gender = gender;
+        this.productType = productType;
+        this.condition = condition;
+        this.price = price;
+    }

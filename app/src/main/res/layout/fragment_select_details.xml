@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/post_bottom_border"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:text="@string/post"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_layout"
+            android:orientation="vertical"
+            android:padding="@dimen/small_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/small_padding">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/select_gender"
+                    android:textColor="@color/colorAlmostSecond"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/gender_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/gender_entries"
+                    android:padding="@dimen/small_padding">
+
+                </androidx.appcompat.widget.AppCompatSpinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/small_padding">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/select_type"
+                    android:textColor="@color/colorAlmostSecond"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/type_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/product_type"
+                    android:padding="@dimen/small_padding">
+
+                </androidx.appcompat.widget.AppCompatSpinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/small_padding">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/select_size"
+                    android:textColor="@color/colorAlmostSecond"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <RadioButton
+                        android:id="@+id/small"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/size_small" />
+
+                    <RadioButton
+                        android:id="@+id/medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/size_medium" />
+
+                    <RadioButton
+                        android:id="@+id/large"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/size_large" />
+
+                    <RadioButton
+                        android:id="@+id/xlarge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/size_xlarge" />
+
+                    <RadioButton
+                        android:id="@+id/xxlarge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/size_xxlarge" />
+
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_size"
+                    android:padding="@dimen/small_padding"
+                    android:textSize="@dimen/text_size"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/small_padding">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/select_condition"
+                    android:textColor="@color/colorAlmostSecond"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/condition_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/condition_entries"
+                    android:padding="@dimen/small_padding">
+
+                </androidx.appcompat.widget.AppCompatSpinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/small_padding">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/select_transaction"
+                    android:textColor="@color/colorAlmostSecond"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/transaction_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/transaction_type"
+                    android:padding="@dimen/small_padding">
+
+                </androidx.appcompat.widget.AppCompatSpinner>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/small_padding">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/small_padding"
+                    android:text="@string/select_price"
+                    android:textColor="@color/colorAlmostSecond"
+                    android:textSize="@dimen/medium_text_size" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/price"
+                    android:padding="@dimen/small_padding"
+                    android:textSize="@dimen/text_size" />
+
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_top"
+                android:indeterminateTint="@color/colorGradient"
+                android:visibility="invisible"
+
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/bottom_sheet" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">Cop Up</string>
+    <string name="hello_world">Hello World</string>
+    <string name="welcome_message">Welcome to Cop Up</string>
+    <!--Networking-->
+    <!--Firebase Collections-->
+    <!--Firebase Collections-->
+    <!--Networking-->
+
+    <!--Layouts and Styling-->
+    <!--Activities-->
+    <!--Fragment Strings-->
+
+    <!--Registry Fragment Strings-->
+
+    <!--Input & Output Strings-->
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="number">Phone Number</string>
+    <string name="password">Password</string>
+    <!--Input & Output Strings-->
+
+    <!--Fragment Strings-->
+    <string name="login_fragment">login_fragment</string>
+    <string name="forgot_password_fragment">forgot_password</string>
+    <string name="email_fragment">email_fragment</string>
+    <string name="phone_number_fragment">phone_number_fragment</string>
+    <string name="register_user_fragment">register_user_fragment</string>
+    <!--Fragment Strings-->
+
+    <string name="register_sign_up">Sign Up</string>
+    <string name="register_btn">Register</string>
+    <string name="next_btn">Next</string>
+    <string name="register_link">Already have an account ? Login here</string>
+    <string name="phone_hint_example">012345678</string>
+    <string name="login_introduction">Hello</string>
+    <string name="login_sign_in">Sign in to your account</string>
+    <string name="login_btn">Login</string>
+    <string name="login_link">Don\'t have an account ? Register here</string>
+    <string name="forgot_password">Forgot your password ?</string>
+    <string name="register_error_message">Please Try Again</string>
+
+    <!--Registry Fragment Strings-->
+
+    <!--Network Registry Strings-->
+    <!--Firestore Strings-->
+
+    <string name="users_collection">users</string>
+    <string name="posts_collection">posts</string>
+
+    <!--USER FIELD STRINGS-->
+    <string name="user_username">username</string>
+    <!--USER FIELD STRINGS-->
+
+    <!--Firestore Strings-->
+
+
+    <!--Error Strings-->
+    <string name="phone_input_error">Invalid Number Entered</string>
+    <string name="phone_input_empty">Please Enter Phone Number</string>
+    <string name="phone_success">SMS Sent To Your Mobile Device</string>
+    <string name="phone_invalid_request">Invalid Request</string>
+    <string name="phone_too_many_requests">OTP Expired</string>
+    <string name="phone_error">Could not send SMS</string>
+    <string name="email_input_empty">Please Enter Email</string>
+    <string name="input_empty">Please Fill In All Fields</string>
+    <string name="user_added_success">Successfully Registered</string>
+    <string name="user_added_error">Something Went Wrong</string>
+    <string name="input_error">Please Enter Valid Details</string>
+    <string name="email_input_error">Invalid Email Entered</string>
+    <string name="short_password">Password is too short</string>
+    <string name="link_message">A link will be sent to your email</string>
+    <string name="oassord_link">Password Recovery In Email</string>
+    <string name="send_link">Send Link</string>
+    <string name="error">Something went wrong</string>
+    <string name="email_exists">Email is already registered</string>
+    <string name="username_exists">Username already exists</string>
+    <string name="wrong_email">Email is not valid</string>
+    <string name="user_error">Sorry, Could Not Add User</string>
+    <string name="email_verification_error">Could Not Send Verification Email</string>
+    <!--Error Strings-->
+
+    <!--SUCCESS Strings-->
+    <string name="phone_input_success">Code Sent To Mobile Phone</string>
+    <string name="email_input_success">Link Sent To Email</string>
+    <string name="user_success">User Added</string>
+    <string name="email_verification_success">Verification Email Sent</string>
+    <!--SUCCESS Strings-->
+    <!--Network Registry Strings-->
+
+
+    <!--Activities-->
+
+    <!--Extra Styles-->
+    <string name="menu_home">Home</string>
+    <string name="menu_post">Post</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="menu_profile">Profile</string>
+    <!--Extra Styles-->
+
+</resources>

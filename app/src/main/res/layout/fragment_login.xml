@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Parent Layout-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/login_parent_linlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <!--Top Image-->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/p" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/login_introduction"
+                android:textSize="50sp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/login_sign_in"
+                android:textSize="19sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_background_button"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="5dp"
+                android:hint="@string/email"
+                android:paddingLeft="10dp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/login_background_button"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="5dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/login_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/margin_top"
+                android:layout_marginEnd="20dp"
+                android:text="@string/forgot_password"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login_btn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/login_background_button"
+                android:text="@string/login_btn"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/login_link_to_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="@string/login_link"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_top"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!--Parent Layout-->
+    <include layout="@layout/bottom_sheet" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

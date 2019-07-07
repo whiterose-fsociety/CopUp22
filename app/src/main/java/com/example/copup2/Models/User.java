@@ -5,13 +5,15 @@ import android.os.Parcelable;
 
 import java.util.ArrayList;
 
-public class User extends BaseUserClass implements Parcelable{
+public class User extends BaseUserClass implements Parcelable {
     private String email;
     private ArrayList<Followers> followers;
     private ArrayList<Following> following;
     private String profile_image;
     private String userID;
     private String username;
+    private String fullname;
+    private String location;
     private Phone phone;
 
     protected User(Parcel parcel) {
@@ -21,12 +23,22 @@ public class User extends BaseUserClass implements Parcelable{
         profile_image = parcel.readString();
         userID = parcel.readString();
         username = parcel.readString();
+        fullname = parcel.readString();
+        location = parcel.readString();
         phone = parcel.readParcelable(Phone.class.getClassLoader());
     }
 
     @Override
     public int describeContents() {
         return 0;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     @Override
@@ -37,7 +49,25 @@ public class User extends BaseUserClass implements Parcelable{
         parcel.writeString(profile_image);
         parcel.writeString(userID);
         parcel.writeString(username);
+        parcel.writeString(fullname);
+        parcel.writeString(location);
         parcel.writeParcelable(phone, i);
+    }
+
+    public String getFullname() {
+        return fullname;
+    }
+
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
+    }
+
+    public static Creator<User> getCREATOR() {
+        return CREATOR;
+    }
+
+    public static void setCREATOR(Creator<User> CREATOR) {
+        User.CREATOR = CREATOR;
     }
 
     @Override
@@ -49,6 +79,7 @@ public class User extends BaseUserClass implements Parcelable{
                 ", profile_image='" + profile_image + '\'' +
                 ", userID='" + userID + '\'' +
                 ", username='" + username + '\'' +
+                ", fullname='" + fullname + '\'' +
                 ", phone=" + phone +
                 '}';
     }

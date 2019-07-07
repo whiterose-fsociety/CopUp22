@@ -16,6 +16,7 @@ import com.example.copup2.Models.Phone;
 import com.example.copup2.Models.User;
 import com.example.copup2.R;
 import com.example.copup2.Registry.LoginActivity;
+import com.example.copup2.Registry.RegisterActivity;
 import com.example.copup2.Registry.RegisterUserActivity;
 import com.example.copup2.Utilities.BottomSheetHelper;
 import com.example.copup2.Utilities.StringManipulation;
@@ -651,9 +652,13 @@ public class Authentication {
                         Log.d(TAG, "onSuccess: USER SUCCESSFULLY ADDED " + user.toString());
                         BottomSheetHelper.setMessage(mFragment.getString(R.string.user_success));
                         BottomSheetHelper.createBottomSheet(mBottomSheetBehavior, mTextView);
-                        FirebaseAuth.getInstance().signOut();
-                        Intent intent = new Intent(mFragment.getContext(), LoginActivity.class);
-                        mFragment.getActivity().startActivity(intent);
+                        if (mFragment.getActivity().getClassLoader().toString().equals(RegisterActivity.class.getClassLoader().toString())) {
+                            FirebaseAuth.getInstance().signOut();
+                            Intent intent = new Intent(mFragment.getContext(), LoginActivity.class);
+                            mFragment.getActivity().startActivity(intent);
+                        } else {
+                            Log.d(TAG, "onSuccess: NOT FROM REGISTERING");
+                        }
                     }
                 }).addOnFailureListener(new OnFailureListener() {
             @Override

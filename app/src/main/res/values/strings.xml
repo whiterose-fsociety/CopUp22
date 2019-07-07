@@ -95,6 +95,7 @@
     <string name="select_image_fragment">select_image_fragment</string>
     <string name="select_details_fragment">select_details_fragment</string>
     <string name="profile_fragment">profile_fragment</string>
+    <string name="edit_profile_fragment">edit_profile_fragment</string>
     <!--Fragment Strings-->
 
     <string name="register_sign_up">Sign Up</string>
